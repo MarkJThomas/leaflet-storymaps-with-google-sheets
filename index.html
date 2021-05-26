@@ -54,15 +54,9 @@
 
   <script type="text/javascript">
     // Create the Leaflet map with a generic start point
-    L.esri.basemapLayer('Terrain').addTo(map);
-    
-    var map = L.map('map', {
-       center: [0, 0],
-       zoom: 1,
-       scrollWheelZoom: false,
-       zoomControl: false,
-       tap: false
-     });
+var map = L.map('map').setView([37.75, -122.45], 12);
+
+L.esri.basemapLayer('Topographic').addTo(map);
    
   </script>
 
