@@ -51,7 +51,7 @@
 
   <div class="loader">Loading...</div>
   <div id="map"></div>
-
+ 
 <script>
       var map = L.map('map', {
       scrollWheelZoom: false,
@@ -59,7 +59,7 @@
       inertiaDeceleration: 2000
       }).setView([37.930029, -96.521934], 4);
 
-      //L.esri.basemapLayer("Gray").addTo(map);
+ L.esri.basemapLayer("Gray").addTo(map);
 
  L.esri.tiledMapLayer("http://basemap.nationalmap.gov/ArcGIS/rest/services/USGSTopo/MapServer", {
   opacity: 0.50,
